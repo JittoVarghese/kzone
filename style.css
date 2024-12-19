@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Yezidi:wght@400..700&family=Syne:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Syne:wght@400..800&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
     margin: 0;
@@ -11,7 +13,7 @@
 }
 
 body {
-    font-family: "Syne", sans-serif ,"Noto Serif Yezidi", serif;
+    font-family: "Syne", sans-serif, serif ,"Abhaya Libre", serif, "Taviraj", serif;
     scroll-behavior: smooth;
 }
 /* Navbar Style */
@@ -25,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    max-width: 1200px;
+    max-width:1200px;
     margin: 0 auto;
 }
 
@@ -71,7 +73,7 @@ body {
 /* Navbar Style */
 
 /* Navbar Style */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hamburger {
         display: block;
     }
@@ -110,7 +112,7 @@ body {
     }
 
     .Logo{
-        width:35%;
+        width:40%;
     }
 }
 /* Navbar Style */
