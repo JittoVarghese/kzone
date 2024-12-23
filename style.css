@@ -8,7 +8,7 @@
 	margin:0 auto;
 	padding:5% 10% 0 10%;
 }
-.contentleftside , .contentrightside{
+.contentleftside , .contentRightside{
 	width:50%;
 	overflow: hidden;
 }
@@ -22,7 +22,7 @@
 	overflow: hidden;
 }
 .contentSection{
-	height:80vh;
+	height:100vh;
 	width:100%;
 }
 .lefttextheading{
@@ -44,7 +44,7 @@
 	text-align: justify;
 }
 .leftsidewrapper{
-	margin:auto;
+
 	width:90%;
 }
 .imagecontainer{
@@ -59,7 +59,7 @@
 
 .desktopPhotos {
 	width:40vw;
-	height:80vh;
+	height:100vh;
 	border-radius:20px;
 	position:relative;
 	overflow:hidden;
@@ -108,6 +108,9 @@
 		height:50vh;
 		
 	} 
+	/* .contentSection{
+		height:70vh;
+	} */
 	.leftsidecontent{
 		font-size:14px;
 	}

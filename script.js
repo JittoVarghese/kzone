@@ -48,7 +48,7 @@ const allPhotos = gsap.utils.toArray(".desktopPhoto")
 let mm = gsap.matchMedia();
 
 // add a media query. When it matches, the associated function will run
-mm.add("(min-width: 1024px)", () => {
+mm.add("(min-width: 600px)", () => {
 
   // this setup code only runs when viewport is at least 600px wide
   console.log("desktop")
@@ -71,8 +71,8 @@ details.forEach((detail, index)=> {
 	   .set(allPhotos[index], {autoAlpha:0})
 	ScrollTrigger.create({
 		trigger:headline,
-		start:"top 60%",
-		end:"top 50%",
+		start:"top 80%",
+		end:"top 80%",
 		animation:animation,
 		scrub:true,
 		markers:false

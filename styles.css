@@ -193,7 +193,7 @@ body {
 }
 
 .story_description{
-    font-size:18px;
+    font-size:16px;
     font-family: "Funnel Display", serif;
     line-height: 170%;
     font-weight:200;
@@ -504,7 +504,26 @@ footer{
     gap:100px;
     width:50%;
 }
-
+@media screen and (max-width:1024px){
+    .hero-container{
+        height:60vh;
+    }
+    .twoside{
+        flex-direction: column;
+    }
+    .imagecontainer{
+        display: block;
+    }
+    .contentleftside,.leftsidewrapper{
+        width:100%;
+    }
+    .contentRightSide{
+        display: none;
+    }
+    .contentSection{
+        height:70vh;
+    }
+}
 @media screen and (max-width: 991px){
   
     .Main_container{
@@ -518,7 +537,7 @@ footer{
     .Container{
         height:50vh;
     }
-    .Container h1{
+    .Container h1 ,.hero-heading{
         font-size:102.4px;
     }
     .Content_Container {
@@ -580,6 +599,7 @@ footer{
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 2;
     }
 
     .nav-item {
@@ -600,7 +620,6 @@ footer{
         padding:10% 6%;
     }
 
-
     .Content_Container p{
         font-size:1.75rem;
         line-height: 160%;
@@ -609,7 +628,7 @@ footer{
     .Container h1{
         font-size:4rem;
     }
-    .Cta_Container h1{
+    .Cta_Container h1,.hero-heading{
         font-size:3rem;
     }
     .link-container{
@@ -619,11 +638,23 @@ footer{
     .footer-logo{
         width:30%;
     }
+    .home-about{
+        flex-direction: column;
+        padding:8%;
+        gap:70px;
+    }
+    .home-about-left, .home-about-right{
+        width:100%;
+        gap:50px;
+    }
+    .home-about-right{
+        flex-direction: column-reverse;
+    }
 
 }
 @media screen and (max-width: 479px){
 
-    .Container h1 , .Cta_Container h1 {
+    .Container h1 , .Cta_Container h1,.hero-heading {
         font-size: 2.5rem;
         padding:0 10%;
     }
