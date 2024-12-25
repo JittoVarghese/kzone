@@ -569,7 +569,7 @@ footer{
     color: #F6F9F0;
     position: relative;
     left:0;
-   top:100%;
+   top:-100%;
     transition: top 0.8s ease-in-out ;
     transform-origin: 100% 0;
     transform: translate(-100%) rotate(-90deg);
