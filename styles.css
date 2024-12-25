@@ -504,6 +504,79 @@ footer{
     gap:100px;
     width:50%;
 }
+
+.gallery-wrap{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:70vh;
+}
+.gallery-item{
+    flex:1;
+    height: 70vh;
+    transition: flex 0.8s ease;
+
+    &:hover{
+        flex:10;
+
+    }
+
+}
+ 
+.item1{
+    position: relative;
+    background: url('./assets/gardenwalking.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.item2{
+    position: relative;
+    background: url('./assets/gardenwalking.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.item3{
+    position: relative;
+    background: url('./assets/gardenwalking.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.item4{
+    position: relative;
+    background: url('./assets/gardenwalking.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.item5{
+    position: relative;
+    background: url('./assets/Guest\ Moments.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.item-heading{
+    width:100%;
+    background-color: #000;
+    color: #F6F9F0;
+    position: relative;
+    left:0;
+   top:100%;
+    transition: top 0.8s ease-in-out ;
+    transform-origin: 100% 0;
+    transform: translate(-100%) rotate(-90deg);
+}
+.item5:hover .item-heading{
+    top:0;
+}
 @media screen and (max-width:1024px){
     .hero-container{
         height:60vh;
