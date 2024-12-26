@@ -30,8 +30,6 @@ faqs.forEach((faq)=>{
 //accordions sections ends
 
 
-
-
 // Scroll Animations
 
 
