@@ -632,7 +632,7 @@ footer{
 }
 .item3{
     position: relative;
-    background: url('./assets/Food\ &\ Dining\ .jpg');
+    background: url('./assets/FoodAndDinning.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -701,8 +701,9 @@ footer{
     }
     .left_container, .right_container{
         width:100%;
+        overflow-x: hidden;
     }
-    .Container{
+    .Container,.contact-container,.service-container{
         height:50vh;
     }
     .Container h1 ,.hero-heading{
@@ -833,7 +834,13 @@ footer{
         font-size: 2.5rem;
         padding:0 10%;
     }
-   
+    .copyrights{
+        width:100%;
+        justify-content: space-between;
+    }
+   .copyright{
+    font-size: 14px;
+   }
     .text-heading{
         font-size: 2.25rem;
     }
