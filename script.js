@@ -1,24 +1,26 @@
 //.html extension  remover
 // Check if the URL contains '.html'
-(function () {
-  const currentPath = window.location.pathname;
+  (function () {
+    const currentPath = window.location.pathname;
 
-  // Redirect /index.html to /
-  if (currentPath === '/index.html') {
-    window.history.replaceState(null, '', '/');
-  }
+    // Redirect /index.html or /index to /
+    if (currentPath === '/index.html' || currentPath === '/index') {
+      window.history.replaceState(null, '', '/');
+    }
 
-  // Handle navigation to other .html pages by removing the .html extension
-  else if (currentPath.endsWith('.html')) {
-    const newPath = currentPath.slice(0, -5); // Remove '.html'
-    window.history.replaceState(null, '', newPath);
-  }
+    // Handle navigation to other .html pages by removing the .html extension
+    else if (currentPath.endsWith('.html')) {
+      const newPath = currentPath.slice(0, -5); // Remove '.html'
+      window.history.replaceState(null, '', newPath);
+    }
 
-  // Ensure the root URL stays as '/' for the index page
-  else if (currentPath === '/index') {
-    window.history.replaceState(null, '', '/');
-  }
-})();
+    // Ensure navigation back to the index page shows '/'
+    window.addEventListener('popstate', () => {
+      if (window.location.pathname === '/index') {
+        window.history.replaceState(null, '', '/');
+      }
+    });
+  })();
 
 
 //.html extension  remover
