@@ -1,8 +1,8 @@
 RewriteEngine On
 
-# Redirect /index.html to /
-RewriteCond %{THE_REQUEST} /index\.html [NC]
-RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+# Redirect /index.html or /index to /
+RewriteCond %{THE_REQUEST} /index(\.html)? [NC]
+RewriteRule ^(.*)index(\.html)?$ /$1 [R=301,L]
 
 # Redirect requests without .html
 RewriteCond %{REQUEST_FILENAME}.html -f
