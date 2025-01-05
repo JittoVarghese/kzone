@@ -1,6 +1,5 @@
 //.html extension  remover
 // Check if the URL contains '.html'
-
 (function () {
   const currentPath = window.location.pathname;
 
@@ -8,10 +7,16 @@
   if (currentPath === '/index.html') {
     window.history.replaceState(null, '', '/');
   }
-  // Redirect other .html pages to clean URLs
+
+  // Handle navigation to other .html pages by removing the .html extension
   else if (currentPath.endsWith('.html')) {
     const newPath = currentPath.slice(0, -5); // Remove '.html'
     window.history.replaceState(null, '', newPath);
+  }
+
+  // Ensure the root URL stays as '/' for the index page
+  else if (currentPath === '/index') {
+    window.history.replaceState(null, '', '/');
   }
 })();
 
