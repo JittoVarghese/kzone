@@ -1,3 +1,26 @@
+//.html extension  remover
+// Check if the URL contains '.html'
+
+(function () {
+  const currentPath = window.location.pathname;
+
+  // Redirect /index.html to /
+  if (currentPath === '/index.html') {
+    window.history.replaceState(null, '', '/');
+  }
+  // Redirect other .html pages to clean URLs
+  else if (currentPath.endsWith('.html')) {
+    const newPath = currentPath.slice(0, -5); // Remove '.html'
+    window.history.replaceState(null, '', newPath);
+  }
+})();
+
+
+//.html extension  remover
+
+
+
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -28,6 +51,7 @@ faqs.forEach((faq)=>{
     });
 });
 //accordions sections ends
+
 
 
 // Scroll Animations

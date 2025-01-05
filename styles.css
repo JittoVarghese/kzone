@@ -8,6 +8,7 @@
     -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
     outline: none !important;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -85,15 +86,19 @@ body {
     position: relative;
     background: rgba(0, 0, 0, 0.4);
     overflow: hidden;
+    object-fit: cover;
+    object-position: center;
     
 }
 .video-bg{
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
+    max-width: 100%;
     min-height: 100%;
     z-index: -1;
+    object-fit: cover;
+    object-position: center;
     
 }
 .hero-description{
@@ -140,7 +145,6 @@ body {
     text-align: center;
 }
 .Content_Container{
-    background: #0f2d1d;
     padding:5% 10%;
     width:100%;
    
@@ -152,7 +156,7 @@ body {
     max-width:100%;
 }
 .Content_Container h4{
-    color:#F6F9F0;
+    color:#000;
     font-family:"Syne", sans-serif;
     font-size:14px;
     margin-bottom: 15px;

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /temp/
+Allow: /
+
+Sitemap: https://www.kelachandraheritage.com/sitemap.xml
